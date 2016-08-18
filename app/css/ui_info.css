@@ -1,0 +1,98 @@
+/**
+ * easyNotes
+ *
+ * @author: MakeMake
+ * @description: 
+ */
+/**
+ * Icons
+*/
+@import "http://maxcdn.icons8.com/fonts/icons8_win10/1.0./styles.min.css";
+/**
+ * Scroll Bars
+*/
+::-webkit-scrollbar {
+  width: 10px; }
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border: 2px solid #d9d9d9; }
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #b3b3b3; }
+
+::-webkit-scrollbar-track {
+  background-color: #d9d9d9; }
+
+/**
+ * Page Reset
+*/
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #fff;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  -webkit-user-select: none; }
+
+a {
+  color: #999;
+  text-decoration: none; }
+
+a:hover {
+  color: #333; }
+
+/**
+ * PostIt title bar and action buttons
+*/
+.titleBar {
+  background: #d9d9d9;
+  line-height: 30px;
+  height: 30px;
+  padding-left: 10px; }
+  .titleBar .dragArea {
+    -webkit-app-region: drag;
+    float: left;
+    color: #a6a6a6; }
+    .titleBar .dragArea i {
+      font-size: 20px;
+      float: left;
+      margin-right: 5px; }
+  .titleBar .actionButtons {
+    float: right;
+    font-size: 20px;
+    color: #a6a6a6; }
+    .titleBar .actionButtons li {
+      display: inline-block;
+      width: 30px;
+      text-align: center;
+      line-height: 30px;
+      list-style: none;
+      float: left;
+      font-size: 20px;
+      cursor: pointer; }
+    .titleBar .actionButtons li:hover {
+      color: gray; }
+
+.infoContent {
+  padding: 10px;
+  text-align: center; }
+  .infoContent .circleLogo {
+    background: #eee;
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 100%; }
+  .infoContent h1 {
+    font-weight: normal;
+    font-size: 30px;
+    margin-bottom: 20px; }
+    .infoContent h1 span {
+      font-size: 12px;
+      color: #999; }
+  .infoContent p {
+    margin-bottom: 20px; }

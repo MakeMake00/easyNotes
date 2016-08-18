@@ -1,0 +1,112 @@
+/**
+ * easyNotes
+ *
+ * @author: MakeMake
+ * @description: 
+ */
+ 
+$colorAccent : #fff; //#FDE57A, #a4cdf5
+
+/**
+ * Icons
+*/
+@import 'http://maxcdn.icons8.com/fonts/icons8_win10/1.0./styles.min.css';
+
+
+/**
+ * Scroll Bars
+*/
+::-webkit-scrollbar{ width: 10px; }
+::-webkit-scrollbar-thumb{ background:$colorAccent; border:2px solid darken($colorAccent, 15%); }
+::-webkit-scrollbar-thumb:hover{ background-color:darken($colorAccent, 30%); }
+::-webkit-scrollbar-track{ background-color: darken($colorAccent, 15%); }
+
+
+/**
+ * Page Reset
+*/
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background:$colorAccent;
+	font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+	font-size:14px;
+	-webkit-user-select: none;
+}
+
+a{ color:#999; text-decoration:none; }
+a:hover{ color: #333; }
+
+/**
+ * PostIt title bar and action buttons
+*/
+.titleBar{
+	background:darken($colorAccent, 15%);
+	line-height:30px;
+	height:30px;
+	padding-left:10px;
+	
+	.dragArea{
+		-webkit-app-region: drag;
+		float:left;
+		color:darken($colorAccent, 35%);
+		
+		i{
+			font-size:20px;
+			float:left;
+			margin-right:5px;
+		}
+	}
+	
+	.actionButtons{
+		float:right;
+		font-size:20px;
+		color:darken($colorAccent, 35%);
+		
+		li{
+			
+			display:inline-block;
+			width:30px;
+			text-align:center;
+			line-height:30px;
+			list-style:none;
+			float:left;
+			font-size:20px;
+			cursor:pointer;
+		}
+		li:hover{ color:darken($colorAccent, 50%); }
+	}
+	
+}
+	
+.infoContent{
+	padding: 10px;
+	text-align:center;
+	
+	.circleLogo{
+		background:#eee;
+		width:50%;
+		display:block;
+		margin:auto;
+		margin-top:10px;
+		margin-bottom:20px;
+		border-radius:100%;
+	}
+	
+	h1{
+		font-weight:normal;
+		font-size:30px;
+		margin-bottom:20px;
+		
+		span{
+			font-size:12px;
+			color:#999;
+		}
+	}
+	p{
+		margin-bottom:20px;
+	}
+}

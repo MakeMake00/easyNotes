@@ -1,0 +1,150 @@
+/**
+ * easyNotes
+ *
+ * @author: MakeMake
+ * @description: 
+ */
+/**
+ * Icons
+*/
+@import "http://maxcdn.icons8.com/fonts/icons8_win10/1.0./styles.min.css";
+/**
+ * Scroll Bars
+*/
+::-webkit-scrollbar {
+  width: 10px; }
+
+::-webkit-scrollbar-thumb {
+  background: #FDE57A;
+  border: 2px solid #fcd62f; }
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #dbb303; }
+
+::-webkit-scrollbar-track {
+  background-color: #fcd62f; }
+
+/**
+ * Page Reset
+*/
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #FDE57A;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  -webkit-user-select: none; }
+
+#postIt {
+  /**
+   * PostIt title bar and action buttons
+  */
+  /**
+   * PostIt content area
+   */ }
+  #postIt .titleBar {
+    background: #fcd62f;
+    line-height: 30px;
+    height: 30px;
+    padding-left: 10px;
+    /**
+     *Settings panel
+     */ }
+    #postIt .titleBar .dragArea {
+      -webkit-app-region: drag;
+      float: left;
+      color: #c29f03; }
+      #postIt .titleBar .dragArea i {
+        font-size: 20px;
+        float: left;
+        margin-right: 5px; }
+    #postIt .titleBar .actionButtons {
+      float: right;
+      display: none;
+      font-size: 20px;
+      color: #c29f03; }
+      #postIt .titleBar .actionButtons li {
+        display: inline-block;
+        width: 30px;
+        text-align: center;
+        line-height: 30px;
+        list-style: none;
+        float: left;
+        font-size: 20px;
+        cursor: pointer; }
+      #postIt .titleBar .actionButtons li:hover {
+        color: #766102; }
+    #postIt .titleBar .postItSettings {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 30px;
+      background: #333;
+      padding: 10px;
+      box-sizing: border-box;
+      display: none; }
+      #postIt .titleBar .postItSettings .colorPalette {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px; }
+        #postIt .titleBar .postItSettings .colorPalette li {
+          display: inline-block;
+          height: 26px;
+          width: 26px;
+          background: red;
+          border-radius: 100%; }
+      #postIt .titleBar .postItSettings .alignBox {
+        margin: auto;
+        width: 200px;
+        border: 1px solid #444;
+        height: 120px; }
+        #postIt .titleBar .postItSettings .alignBox .arrow {
+          position: absolute;
+          height: 30px;
+          width: 30px;
+          display: block;
+          text-align: center;
+          line-height: 30px;
+          font-size: 26px;
+          color: #444;
+          cursor: pointer; }
+        #postIt .titleBar .postItSettings .alignBox .arrow.leftTop {
+          transform: rotate(-135deg); }
+        #postIt .titleBar .postItSettings .alignBox .arrow.rightTop {
+          margin-left: 170px;
+          transform: rotate(-45deg); }
+        #postIt .titleBar .postItSettings .alignBox .arrow.leftBottom {
+          margin-top: 90px;
+          transform: rotate(135deg); }
+        #postIt .titleBar .postItSettings .alignBox .arrow.rightBottom {
+          margin-top: 90px;
+          margin-left: 170px;
+          transform: rotate(45deg); }
+        #postIt .titleBar .postItSettings .alignBox .arrow.center {
+          margin-top: 45px;
+          margin-left: 85px; }
+        #postIt .titleBar .postItSettings .alignBox .arrow:hover {
+          color: #fcd62f; }
+  #postIt .postItContent {
+    padding: 10px;
+    line-height: 20px; }
+    #postIt .postItContent div {
+      overflow-y: auto;
+      height: 100%;
+      white-space: pre;
+      font-size: 18px; }
+    #postIt .postItContent textarea {
+      background: #fdeca1;
+      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      font-size: 18px;
+      height: 100%;
+      width: 100%;
+      line-height: 20px;
+      border: 0px;
+      outline: none;
+      display: none;
+      margin: -2px;
+      padding: 2px;
+      resize: none; }
